@@ -57,21 +57,31 @@
 // lg 1024px
 @media screen and (min-width: 64em){
 .welcome{
+    display: grid;
+    grid-template-columns: 34.37em 1fr;
     .box-title{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 1;
         h1{
             font-size: 3em;
         }
     }
-    .box-text{
+    .box-images{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 2;
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: .5em;
-        // align-items: center;
+    }
+    .box-text{
+        display: block;
         p{
             padding: 1em 0;
             text-align: left;
-            font-size: 1.3em;
-            line-height: 1.8em;
+            font-size: 1.5em;
+            line-height: 1.5em;
         }
         .botones{
             display: block;

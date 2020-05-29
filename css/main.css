@@ -110,9 +110,12 @@ header div.box-btn { display: none; }
   .welcome .box-text .botones { display: grid; grid-template-columns: 1fr 1fr; grid-gap: .5em; padding: 1em 0; }
   .welcome .box-text .botones .boton .boton-box-text { padding: 0; height: 60px; } }
 
-@media screen and (min-width: 64em) { .welcome .box-title h1 { font-size: 3em; }
-  .welcome .box-text { display: grid; grid-template-columns: 1fr 1fr; grid-gap: .5em; }
-  .welcome .box-text p { padding: 1em 0; text-align: left; font-size: 1.3em; line-height: 1.8em; }
+@media screen and (min-width: 64em) { .welcome { display: grid; grid-template-columns: 34.37em 1fr; }
+  .welcome .box-title { grid-column-start: 1; grid-column-end: 3; grid-row-start: 1; grid-row-end: 1; }
+  .welcome .box-title h1 { font-size: 3em; }
+  .welcome .box-images { grid-column-start: 2; grid-column-end: 2; grid-row-start: 2; grid-row-end: 2; display: grid; }
+  .welcome .box-text { display: block; }
+  .welcome .box-text p { padding: 1em 0; text-align: left; font-size: 1.5em; line-height: 1.5em; }
   .welcome .box-text .botones { display: block; padding: 1.6em 0 0 0; }
   .welcome .box-text .botones .boton { padding: 0; padding-bottom: 1.5em; }
   .welcome .box-text .botones .boton .boton-box-text { height: auto; }
