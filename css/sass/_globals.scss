@@ -1,0 +1,86 @@
+/**** P R O J E C T   C O L O R S ******/
+$white: #fff;
+$principal-blue: rgb(0, 32, 96);
+$gray-test: #eee;
+/* G E N E R A L   C O L O R S */
+$blue: #007bff;
+$cyan: #17a2b8;
+$indigo: #6610f2;
+$danger: #dc3545;
+$dark: #343a40;
+$gray: #6c757d;
+$gray-dark: #343a40;
+$green: #28a745;
+$info: #17a2b8;
+$light: #f8f9fa;
+$orange: #fd7e14;
+$primary: #007bff;
+$pink: #e83e8c;
+$purple: #6f42c1;
+$red: #dc3545;
+$secondary: #6c757d;
+$success: #28a745;
+$teal: #20c997;
+$warning: #ffc107;
+$white: #fff;
+$yellow: #ffc107;
+/* S O C I A L  N E T W O R K S   C O L O R S */
+$facebook: #3b5998;
+$pinterest: #bd081c;
+$twitter: #1da1f2;
+
+/* box-sizing: border-box;
+ --> Antigua practica
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+ --> Recomendable 
+Para que no cause conflictos con
+Themes con un CMS como WordPress o con Proyectos Grandes
+asi no afecta sus propiedades de origen
+*/
+html{
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+/**** H T M L - E L E M E N T S ******/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: $principal-blue;
+    text-align: center;
+}
+
+body{
+    background: $white;
+}
+
+/* M Y  -  O W N S */
+/*******************************************/
+.border{
+    border: 1px solid red;
+}
+/*******************************************/
+nav ul li{
+    list-style: none;
+    // width: 50%;
+    // float: left;
+}
+a{
+    text-decoration: none;
+    font-size: 1em;
+}
+img{
+    pointer-events: none;
+}
+
+/*******************************************/
+header, section{
+    padding: .5em 1em;
+}

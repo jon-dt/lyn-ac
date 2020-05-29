@@ -1,0 +1,82 @@
+/**** P R O J E C T   C O L O R S ******/
+/* G E N E R A L   C O L O R S */
+/* S O C I A L  N E T W O R K S   C O L O R S */
+/* box-sizing: border-box;
+ --> Antigua practica
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+ --> Recomendable 
+Para que no cause conflictos con
+Themes con un CMS como WordPress o con Proyectos Grandes
+asi no afecta sus propiedades de origen
+*/
+html { box-sizing: border-box; }
+
+*, *:before, *:after { box-sizing: inherit; }
+
+/**** H T M L - E L E M E N T S ******/
+* { margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; color: #002060; text-align: center; }
+
+body { background: #fff; }
+
+/* M Y  -  O W N S */
+/*******************************************/
+.border { border: 1px solid red; }
+
+/*******************************************/
+nav ul li { list-style: none; }
+
+a { text-decoration: none; font-size: 1em; }
+
+img { pointer-events: none; }
+
+/*******************************************/
+header, section { padding: .5em 1em; }
+
+header { /*position: fixed; z-index: 100;*/ width: 100%; display: flex; justify-content: space-between; }
+
+header div { display: flex; align-items: center; }
+
+header div.box-logo a img { background: #fff; width: 80px; }
+
+header div.box-menu .menu-hamburguer { width: 1.5em; height: 1.5em; justify-content: center; cursor: pointer; }
+
+header div.box-menu .menu-hamburguer .modal { display: none; position: fixed; left: 0; right: 0; width: 100%; height: 100%; margin-top: 20em; background-color: rgba(0, 0, 0, 0.5); }
+
+header div.box-menu .menu-hamburguer .modal .modal-menu { position: absolute; left: 0; right: 0; margin: auto; margin-top: 2em; width: 85%; background: #fff; border-radius: .5em; padding: 1em 0; justify-content: center; }
+
+header div.box-menu .menu-hamburguer .modal .modal-menu li { padding: .8em; }
+
+header div.box-menu .menu-hamburguer .modal .modal-menu li a { color: #002060; font-weight: 600; font-size: 1em; }
+
+header div.box-menu .menu-hamburguer .menu-icon { display: none; }
+
+header div.box-menu .menu-hamburguer .menu-icon:checked ~ .modal { display: block; }
+
+header div.box-menu .menu-hamburguer .menu-icon:checked ~ label:after { content: ""; display: block; width: 1.5em; height: 1.5em; background: url("../../assets/icons/icon-close.svg") no-repeat; }
+
+header div.box-menu .menu-hamburguer label { user-select: none; }
+
+header div.box-menu .menu-hamburguer label:after { cursor: pointer; content: ""; display: block; width: 1.5em; height: 1em; background: url("../../assets/icons/icon-hamburger.svg") no-repeat; transition: .3s ease all; }
+
+header div.box-menu nav.menu-nav { display: none; }
+
+header div.box-menu nav.menu-nav ul li { display: inline-block; }
+
+header div.box-menu nav.menu-nav ul li a { margin: 0 1em; }
+
+header div.box-menu nav.menu-nav ul li a:hover { padding-bottom: .5em; border-bottom: 2px solid #002060; }
+
+header div.box-btn { display: none; }
+
+header div.box-btn a.btn-donar { padding: 1em 3em; background: #002060; border-radius: .5em; color: #fff; font-weight: 700; }
+
+header div.box-btn a.btn-donar:hover { background: #007bff; }
+
+.welcome { /*padding: 2em 0;*/ }
+
+.welcome h1 { font-size: 2em; }
+/*# sourceMappingURL=main.css.map */
