@@ -1,6 +1,29 @@
 .welcome{
-    /*padding: 2em 0;*/
-    h1{
-        font-size: 2em;
+    .box-title{
+        h1{
+            font-size: 2em;
+        }
+    }
+    .box-images{
+        .image{
+            justify-content: center;
+            img{
+                margin: 1em 0;
+                width: 100%;
+            }
+        }
+    }
+    .box-text{
+        padding: 0;
+        p{
+            padding: .5em 0;
+            line-height: 1.25em;
+        }
+        .botones{
+            padding-bottom: 1em;
+            .boton{
+                padding: 1em;
+            }
+        }
     }
 }
