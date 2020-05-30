@@ -51,7 +51,12 @@
 
 // md 768px
 @media screen and (min-width: 48em){
-
+    .why-lyn{
+        .box-beneficios{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
 }
 
 // lg 1024px
@@ -104,6 +109,17 @@
         .box-ayuda{
             margin-top: -2em;
         }
+    }
+}
+.why-lyn{
+    .box-description{
+        p{
+            text-align: center;
+        }
+    }
+    .box-beneficios{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 }
