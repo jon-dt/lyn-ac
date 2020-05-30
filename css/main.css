@@ -41,6 +41,8 @@ a { text-decoration: none; font-size: 1em; }
 
 img { pointer-events: none; }
 
+p { line-height: 1.25em; }
+
 /*******************************************/
 header, section { padding: .5em 1em; }
 
@@ -94,11 +96,31 @@ header div.box-btn { display: none; }
 
 .welcome .box-text { padding: 0; }
 
-.welcome .box-text p { padding: .5em 0; line-height: 1.25em; }
+.welcome .box-text p { padding: .5em 0; }
 
 .welcome .box-text .botones { padding-bottom: 1em; }
 
 .welcome .box-text .botones .boton { padding: 1em; }
+
+.welcome .box-ayuda p { padding-bottom: 1.5em; }
+
+.why-lyn { background: #eee; }
+
+.why-lyn .box-title { padding: 1em 0; }
+
+.why-lyn .box-title h1 { font-size: 2em; }
+
+.why-lyn .box-description { text-align: left; }
+
+.why-lyn .box-description p { text-align: left; padding: .5em 0; color: #6c757d; }
+
+.why-lyn .box-beneficios .beneficio { display: grid; grid-template-columns: 6.5em 1fr; align-items: center; padding: 1.5em 0; }
+
+.why-lyn .box-beneficios .beneficio .box-text { text-align: left; }
+
+.why-lyn .box-beneficios .beneficio .box-text p { font-weight: 700; padding: .25em 0; text-align: left; }
+
+.why-lyn .box-beneficios .beneficio .box-text span { font-size: .8em; color: #6c757d; padding: .25em 0; }
 
 @media screen and (min-width: 35.5em) { header div.box-menu .menu-hamburguer { display: none; }
   header div.box-menu nav.menu-nav { display: flex; }
